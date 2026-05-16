@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-16T14:11:09.871Z",
+  "updatedAt": "2026-05-16T14:17:10.818Z",
   "counts": {
     "active": 24,
     "discovered": 38,
@@ -10,728 +10,793 @@
       "name": "apple-notes",
       "status": "已安裝 / 目前可用",
       "source": "OpenClaw stock",
-      "description": "Create, view, edit, delete, search, move, or export Apple Notes via the memo CLI on macOS.",
+      "description": "在 macOS 上建立、搜尋、讀取、編輯、刪除或匯出 Apple Notes。",
       "capabilities": [
-        "個人生產力工具",
-        "搜尋/建立/更新資料",
-        "日程與文件協作"
-      ]
+        "搜尋筆記",
+        "建立/更新筆記",
+        "匯出筆記內容"
+      ],
+      "title": "Apple Notes 筆記管理"
     },
     {
       "name": "apple-reminders",
       "status": "已安裝 / 目前可用",
       "source": "OpenClaw stock",
-      "description": "List, add, edit, complete, or delete Apple Reminders and reminder lists via remindctl.",
+      "description": "管理 Apple Reminders：新增、列出、修改、完成或刪除提醒與清單。",
       "capabilities": [
-        "個人生產力工具",
-        "搜尋/建立/更新資料",
-        "日程與文件協作"
-      ]
+        "新增提醒",
+        "查看待辦清單",
+        "完成/修改提醒"
+      ],
+      "title": "Apple Reminders 待辦提醒"
     },
     {
       "name": "daily-report-voice",
       "status": "已安裝 / 目前可用",
       "source": "workspace",
-      "description": "Generate and deliver Jason's daily report as Chinese text + Chinese voice attachment to Telegram. Use when asked to run, fix, or modify the 5:00 daily report pipeline, report format, voice output, attachment delivery, or related schedule/script issues.",
+      "description": "產生 Jason 的每日中文報告，並透過 Telegram 交付文字與中文語音附件。",
       "capabilities": [
-        "訊息讀取/搜尋",
-        "訊息傳送",
-        "群組/私訊協作"
-      ]
+        "每日報告",
+        "中文語音輸出",
+        "Telegram 交付"
+      ],
+      "title": "每日報告語音管線"
     },
     {
       "name": "fincept",
       "status": "已安裝 / 目前可用",
       "source": "workspace",
-      "description": "Use Jason's local Fincept Bridge/Gateway for financial data queries, market data, Yahoo/CoinGecko public providers, or Fincept official API analysis while protecting API keys/tokens and avoiding unnecessary Fincept credit usage.",
+      "description": "使用本地 Fincept Bridge/Gateway 查詢市場、股票、加密貨幣與金融資料，優先節省官方 API 額度。",
       "capabilities": [
         "市場資料查詢",
-        "持股監控",
-        "價格/閾值提醒"
-      ]
+        "Yahoo/CoinGecko 公開源",
+        "避免浪費 Fincept credits"
+      ],
+      "title": "Fincept 金融資料"
     },
     {
       "name": "gemini",
       "status": "已安裝 / 目前可用",
       "source": "OpenClaw stock",
-      "description": "Gemini CLI for one-shot Q&A, summaries, and generation.",
+      "description": "用 Gemini CLI 做一次性問答、摘要、產文或輔助分析。",
       "capabilities": [
-        "依技能說明執行",
-        "可做專案化封裝",
-        "需要時先驗證可用性"
-      ]
+        "摘要文件",
+        "產生內容",
+        "外部模型交叉檢查"
+      ],
+      "title": "Gemini CLI"
     },
     {
       "name": "gh-issues",
       "status": "已安裝 / 目前可用",
       "source": "OpenClaw stock",
-      "description": "Fetch GitHub issues, delegate fixes to subagents, open PRs, watch reviews, or run /gh-issues workflows.",
+      "description": "抓取 GitHub issue、委派修復、建立 PR、追蹤 review 與 CI。",
       "capabilities": [
-        "GitHub repo/PR/issue 查詢",
-        "CI 狀態檢查",
-        "發布與協作流程"
-      ]
+        "issue triage",
+        "修復委派",
+        "PR/CI 追蹤"
+      ],
+      "title": "GitHub Issues 工作流"
     },
     {
       "name": "github",
       "status": "已安裝 / 目前可用",
       "source": "OpenClaw stock",
-      "description": "Use gh for GitHub issues, PR status, CI/logs, comments, reviews, releases, and API queries.",
+      "description": "使用 gh CLI 查詢 issue、PR、CI、release、review、repo 狀態與 API。",
       "capabilities": [
-        "GitHub repo/PR/issue 查詢",
-        "CI 狀態檢查",
-        "發布與協作流程"
-      ]
+        "PR/issue 查詢",
+        "CI 日誌",
+        "GitHub Pages/Repo 管理"
+      ],
+      "title": "GitHub 操作"
     },
     {
       "name": "gog",
       "status": "已安裝 / 目前可用",
       "source": "OpenClaw stock",
-      "description": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
+      "description": "操作 Gmail、Calendar、Drive、Contacts、Sheets、Docs 等 Google Workspace 工具。",
       "capabilities": [
-        "個人生產力工具",
-        "搜尋/建立/更新資料",
-        "日程與文件協作"
-      ]
+        "Gmail/Calendar",
+        "Drive/Docs/Sheets",
+        "聯絡人與文件協作"
+      ],
+      "title": "Google Workspace"
     },
     {
       "name": "healthcheck",
       "status": "已安裝 / 目前可用",
       "source": "OpenClaw stock",
-      "description": "Audit and harden hosts running OpenClaw for SSH, firewall, updates, exposure, cron checks, and risk posture.",
+      "description": "稽核並強化 OpenClaw 主機安全：SSH、防火牆、更新、暴露面、cron 檢查。",
       "capabilities": [
-        "依技能說明執行",
-        "可做專案化封裝",
-        "需要時先驗證可用性"
-      ]
+        "安全稽核",
+        "系統更新檢查",
+        "風險姿態整理"
+      ],
+      "title": "OpenClaw 主機健檢"
     },
     {
       "name": "html-ppt",
       "status": "已安裝 / 目前可用",
       "source": "workspace",
-      "description": "Create high-quality interactive HTML slide decks, PPT-like presentations, speaker-note decks, mobile/desktop responsive decks, lecture/training decks, product pitches, and Xiaohongshu/IG carousel-style pages using HTML/CSS/JavaScript. Use when the user asks for PPT, slides, deck, keynote, speaker mode, presenter view, interactive HTML presentation, 「請把這些資料做成互動式HTML投影片」, or converting documents/videos/talks into polished web slides.",
+      "description": "建立高品質互動式 HTML 投影片、簡報、課程、產品提案與社群輪播頁。",
       "capabilities": [
-        "互動式 HTML 投影片",
-        "簡報/展示頁製作",
-        "響應式視覺排版"
-      ]
+        "互動簡報",
+        "響應式頁面",
+        "講者模式/展示頁"
+      ],
+      "title": "HTML 投影片製作"
     },
     {
       "name": "html-ppt-catalog",
       "status": "已安裝 / 目前可用",
       "source": "workspace",
-      "description": "Maintain a fixed index/catalog webpage for all generated HTML PPT / GitHub Pages slide decks. Use when creating, publishing, updating, or auditing HTML PPT links, slide deck catalogs, portfolio pages, presentation indexes, or when the user asks for a總表/列表/入口頁 of all PPT links with names, descriptions, sources, dates, and URLs.",
+      "description": "維護所有 HTML PPT / GitHub Pages 簡報的入口目錄與連結索引。",
       "capabilities": [
-        "GitHub repo/PR/issue 查詢",
-        "CI 狀態檢查",
-        "發布與協作流程"
-      ]
+        "簡報入口頁",
+        "連結總表",
+        "作品集整理"
+      ],
+      "title": "HTML PPT 總表"
     },
     {
       "name": "imsg",
       "status": "已安裝 / 目前可用",
       "source": "OpenClaw stock",
-      "description": "iMessage/SMS CLI for listing chats, history, and sending messages via Messages.app.",
+      "description": "讀取、搜尋並透過 Messages.app 發送 iMessage/SMS。",
       "capabilities": [
-        "訊息讀取/搜尋",
-        "訊息傳送",
-        "群組/私訊協作"
-      ]
+        "列出對話",
+        "搜尋訊息",
+        "發送訊息"
+      ],
+      "title": "iMessage / SMS"
     },
     {
       "name": "nano-pdf",
       "status": "已安裝 / 目前可用",
       "source": "OpenClaw stock",
-      "description": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
+      "description": "用自然語言指令編輯 PDF。",
       "capabilities": [
-        "PDF 分析/編輯",
-        "內容擷取",
-        "文件交付"
-      ]
+        "修改 PDF",
+        "頁面/文字調整",
+        "輸出交付檔"
+      ],
+      "title": "PDF 編輯"
     },
     {
       "name": "node-connect",
       "status": "已安裝 / 目前可用",
       "source": "OpenClaw stock",
-      "description": "Diagnose OpenClaw Android, iOS, or macOS node pairing, QR/setup code, route, auth, and connection failures.",
+      "description": "診斷 Android/iOS/macOS node 配對、QR/setup code、路由、授權與連線失敗。",
       "capabilities": [
-        "依技能說明執行",
-        "可做專案化封裝",
-        "需要時先驗證可用性"
-      ]
+        "節點配對",
+        "連線診斷",
+        "權限檢查"
+      ],
+      "title": "OpenClaw 節點連線診斷"
     },
     {
       "name": "openai-whisper-api",
       "status": "已安裝 / 目前可用",
       "source": "OpenClaw stock",
-      "description": "Transcribe audio via OpenAI Audio Transcriptions API (Whisper).",
+      "description": "透過 OpenAI Audio Transcriptions API 做音訊轉文字。",
       "capabilities": [
-        "語音轉文字/文字轉語音",
-        "音訊處理",
-        "語音交付"
-      ]
+        "高品質轉錄",
+        "會議/語音整理",
+        "字幕文字"
+      ],
+      "title": "OpenAI Whisper API 轉錄"
     },
     {
       "name": "skill-creator",
       "status": "已安裝 / 目前可用",
       "source": "OpenClaw stock",
-      "description": "Create, edit, improve, tidy, review, audit, or restructure AgentSkills and SKILL.md files.",
+      "description": "建立、編輯、審查或整理 OpenClaw AgentSkill / SKILL.md。",
       "capabilities": [
-        "依技能說明執行",
-        "可做專案化封裝",
-        "需要時先驗證可用性"
-      ]
+        "建立技能",
+        "重構技能文件",
+        "技能審核"
+      ],
+      "title": "技能建立/維護"
     },
     {
       "name": "taskflow",
       "status": "已安裝 / 目前可用",
       "source": "OpenClaw stock",
-      "description": "Coordinate multi-step detached tasks as one durable TaskFlow job with owner context, state, waits, and child tasks.",
+      "description": "管理多步驟、可等待、可恢復的長任務與子任務。",
       "capabilities": [
-        "長任務協調",
-        "等待/恢復狀態",
-        "子任務管理"
-      ]
+        "長任務狀態",
+        "子任務協調",
+        "等待/恢復"
+      ],
+      "title": "TaskFlow 長任務協調"
     },
     {
       "name": "taskflow-inbox-triage",
       "status": "已安裝 / 目前可用",
       "source": "OpenClaw stock",
-      "description": "Example TaskFlow pattern for inbox triage, intent routing, waiting on replies, and later summaries.",
+      "description": "示範如何做 inbox triage、意圖路由、等待回覆與後續摘要。",
       "capabilities": [
-        "長任務協調",
-        "等待/恢復狀態",
-        "子任務管理"
-      ]
+        "收件匣分類",
+        "等待回覆",
+        "後續摘要"
+      ],
+      "title": "TaskFlow 收件匣分流範例"
     },
     {
       "name": "telegram",
       "status": "已安裝 / 目前可用",
       "source": "user skills",
-      "description": "Telegram CLI for reading, searching, and sending messages. Use when the user asks about Telegram messages, wants to check inbox, search chats, send messages, or look up contacts and groups.",
+      "description": "讀取、搜尋與發送 Telegram 訊息，查找聯絡人與群組。",
       "capabilities": [
-        "訊息讀取/搜尋",
-        "訊息傳送",
-        "群組/私訊協作"
-      ]
+        "搜尋聊天",
+        "發送訊息",
+        "群組/私訊處理"
+      ],
+      "title": "Telegram 管理"
     },
     {
       "name": "terminal-ocr",
       "status": "已安裝 / 目前可用",
       "source": "workspace",
-      "description": "终端截图OCR识别技能。专门处理终端/命令行界面的截图，提取文本内容并进行分析。",
+      "description": "專門辨識終端機/命令列截圖文字並分析。",
       "capabilities": [
-        "依技能說明執行",
-        "可做專案化封裝",
-        "需要時先驗證可用性"
-      ]
+        "終端截圖辨識",
+        "錯誤訊息抽取",
+        "命令列畫面分析"
+      ],
+      "title": "終端截圖 OCR"
     },
     {
       "name": "tw-stock-hourly-monitor",
       "status": "已安裝 / 目前可用",
       "source": "workspace",
-      "description": "Maintain Taiwan market monitoring (opening + hourly checks through close) with Telegram text and local Chinese voice alerts. Use when asked to modify TW symbols, thresholds, trading-window logic, or troubleshoot TW alert automation.",
+      "description": "維護台股開盤與盤中小時監控、閾值提醒、Telegram 文字與中文語音通知。",
       "capabilities": [
-        "訊息讀取/搜尋",
-        "訊息傳送",
-        "群組/私訊協作"
-      ]
+        "台股監控",
+        "閾值警報",
+        "語音/Telegram 通知"
+      ],
+      "title": "台股持股監控"
     },
     {
       "name": "us-stock-hourly-monitor",
       "status": "已安裝 / 目前可用",
       "source": "workspace",
-      "description": "Maintain US stock hourly monitoring from market open to close with threshold-triggered alerts. Use when asked to add symbols, change thresholds, adjust cadence/session windows, debug missed alerts, or tune Telegram/voice notification behavior for US market monitoring.",
+      "description": "維護美股開盤到收盤的小時監控與漲跌幅警報。",
       "capabilities": [
-        "訊息讀取/搜尋",
-        "訊息傳送",
-        "群組/私訊協作"
-      ]
+        "美股監控",
+        "盤中警報",
+        "收盤摘要"
+      ],
+      "title": "美股持股監控"
     },
     {
       "name": "video-frames",
       "status": "已安裝 / 目前可用",
       "source": "OpenClaw stock",
-      "description": "Extract frames or short clips from videos using ffmpeg.",
+      "description": "用 ffmpeg 從影片擷取畫面或短片段。",
       "capabilities": [
-        "影片切幀",
+        "影片截圖",
         "短片段擷取",
-        "視覺素材整理"
-      ]
+        "素材整理"
+      ],
+      "title": "影片切幀"
     },
     {
       "name": "weather",
       "status": "已安裝 / 目前可用",
       "source": "OpenClaw stock",
-      "description": "Get current weather, rain, temperature, and forecasts for locations or travel planning.",
+      "description": "查詢目前天氣、降雨、溫度與預報，支援外出/旅行規劃。",
       "capabilities": [
-        "天氣/降雨查詢",
-        "行程天氣建議",
-        "預報摘要"
-      ]
+        "即時天氣",
+        "降雨預報",
+        "旅行天氣建議"
+      ],
+      "title": "天氣查詢"
     },
     {
       "name": "1password",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "Set up and use 1Password CLI for sign-in, desktop integration, and reading or injecting secrets.",
+      "description": "協助查找/使用 1Password CLI 管理的登入、密碼與安全項目；適合需要憑證但不能直接暴露秘密的流程。",
       "capabilities": [
-        "依技能說明執行",
-        "可做專案化封裝",
-        "需要時先驗證可用性"
-      ]
+        "安全查找登入項目",
+        "配合 CLI 使用憑證",
+        "避免在聊天中暴露密碼"
+      ],
+      "title": "1Password 密碼與安全資料查詢"
     },
     {
       "name": "bear-notes",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "Create, search, and manage Bear notes via grizzly CLI.",
+      "description": "操作 Bear Notes 的筆記搜尋、建立與整理流程。",
       "capabilities": [
-        "個人生產力工具",
-        "搜尋/建立/更新資料",
-        "日程與文件協作"
-      ]
+        "搜尋 Bear 筆記",
+        "建立筆記",
+        "整理標籤/內容"
+      ],
+      "title": "Bear 筆記管理"
     },
     {
       "name": "blogwatcher",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.",
+      "description": "追蹤指定網站或 RSS 的更新，適合內容監看與摘要通知。",
       "capabilities": [
-        "依技能說明執行",
-        "可做專案化封裝",
-        "需要時先驗證可用性"
-      ]
+        "監控文章更新",
+        "摘要新內容",
+        "定期通知"
+      ],
+      "title": "部落格/網站更新監控"
     },
     {
       "name": "blucli",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "BluOS CLI (blu) for discovery, playback, grouping, and volume.",
+      "description": "透過 blucli 操作支援的平台帳號與訊息/貼文流程。",
       "capabilities": [
-        "依技能說明執行",
-        "可做專案化封裝",
-        "需要時先驗證可用性"
-      ]
+        "社群內容查詢",
+        "發布前整理",
+        "帳號互動輔助"
+      ],
+      "title": "BlueSky/社群工具"
     },
     {
       "name": "bluebubbles",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "Send and manage iMessages via BlueBubbles, including attachments, tapbacks, edits, replies, and groups.",
+      "description": "透過 BlueBubbles 管理 iMessage 訊息讀取與發送流程。",
       "capabilities": [
-        "訊息讀取/搜尋",
-        "訊息傳送",
-        "群組/私訊協作"
-      ]
+        "讀取聊天",
+        "發送訊息",
+        "查找對話"
+      ],
+      "title": "BlueBubbles / iMessage 連線"
     },
     {
       "name": "camsnap",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "Capture frames or clips from RTSP/ONVIF cameras.",
+      "description": "從已配置的相機或裝置抓取快照，用於查看現場狀態。",
       "capabilities": [
-        "影片切幀",
-        "短片段擷取",
-        "視覺素材整理"
-      ]
+        "相機截圖",
+        "現場狀態確認",
+        "影像輔助判斷"
+      ],
+      "title": "相機快照"
     },
     {
       "name": "canvas",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "本機已找到技能檔，待補說明。",
+      "description": "把網頁或 UI 呈現在 OpenClaw canvas，方便檢視、截圖與互動展示。",
       "capabilities": [
-        "依技能說明執行",
-        "可做專案化封裝",
-        "需要時先驗證可用性"
-      ]
+        "呈現網頁",
+        "截圖檢查",
+        "UI 預覽"
+      ],
+      "title": "Canvas 視覺畫布"
     },
     {
       "name": "clawhub",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "Search, install, update, sync, or publish agent skills with the ClawHub CLI and registry.",
+      "description": "搜尋、安裝或更新 ClawHub 上的 OpenClaw 技能。",
       "capabilities": [
-        "依技能說明執行",
-        "可做專案化封裝",
-        "需要時先驗證可用性"
-      ]
+        "搜尋新技能",
+        "更新技能",
+        "評估安裝來源"
+      ],
+      "title": "ClawHub 技能庫"
     },
     {
       "name": "coding-agent",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "Delegate coding tasks to Codex, Claude Code, OpenCode, or Pi agents via immediate background processes. Use when: (1) building or creating features/apps, (2) reviewing PRs in a temp clone/worktree, (3) refactoring large codebases, (4) iterative coding that needs file exploration. NOT for: simple one-line fixes (just edit), reading code (use read tool), thread-bound ACP harness requests in chat (use sessions_spawn with runtime:\"acp\"), or any work in ~/clawd workspace (never spawn agents here). All coding-agent runs start with background:true immediately. Claude Code: use --print --permission-mode bypassPermissions (no PTY). Codex/Pi/OpenCode: pty:true required. Completion notification must use openclaw message send, not system event/heartbeat.",
+      "description": "委派較大型的程式修改、除錯、重構或測試工作給 coding agent。",
       "capabilities": [
-        "訊息讀取/搜尋",
-        "訊息傳送",
-        "群組/私訊協作"
-      ]
+        "多檔修改",
+        "重構/除錯",
+        "測試驗證"
+      ],
+      "title": "程式碼代理"
     },
     {
       "name": "discord",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "Discord ops via the message tool (channel=discord).",
+      "description": "讀取、搜尋、回覆或管理 Discord 頻道與訊息。",
       "capabilities": [
-        "訊息讀取/搜尋",
-        "訊息傳送",
-        "群組/私訊協作"
-      ]
+        "頻道訊息處理",
+        "回覆/反應",
+        "群組協作"
+      ],
+      "title": "Discord 管理"
     },
     {
       "name": "eightctl",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "Control Eight Sleep pods (status, temperature, alarms, schedules).",
+      "description": "操作 Eight Sleep/睡眠設備相關查詢與控制。",
       "capabilities": [
-        "依技能說明執行",
-        "可做專案化封裝",
-        "需要時先驗證可用性"
-      ]
+        "設備狀態",
+        "睡眠資料查詢",
+        "設備控制"
+      ],
+      "title": "Eight Sleep 控制"
     },
     {
       "name": "gdrive-uploader",
       "status": "已存在 / 可評估啟用",
       "source": "workspace",
-      "description": "本機已找到技能檔，待補說明。",
+      "description": "把檔案上傳到 Google Drive 並產生分享連結，適合交付圖片、zip、PDF、簡報。",
       "capabilities": [
-        "個人生產力工具",
-        "搜尋/建立/更新資料",
-        "日程與文件協作"
-      ]
+        "Drive 上傳",
+        "產生分享連結",
+        "交付檔案"
+      ],
+      "title": "Google Drive 檔案上傳"
     },
     {
       "name": "gifgrep",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "Search GIF providers with CLI/TUI, download results, and extract stills/sheets.",
+      "description": "搜尋或挑選適合的 GIF 動圖素材。",
       "capabilities": [
-        "個人生產力工具",
-        "搜尋/建立/更新資料",
-        "日程與文件協作"
-      ]
+        "找 GIF",
+        "素材挑選",
+        "聊天/簡報輔助"
+      ],
+      "title": "GIF 搜尋"
     },
     {
       "name": "goplaces",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "Query Google Places for text search, place details, resolve, reviews, or scriptable JSON via goplaces.",
+      "description": "查詢地點、路線或外出規劃相關資訊。",
       "capabilities": [
-        "個人生產力工具",
-        "搜尋/建立/更新資料",
-        "日程與文件協作"
-      ]
+        "地點搜尋",
+        "路線建議",
+        "行程輔助"
+      ],
+      "title": "地點/導航查詢"
     },
     {
       "name": "himalaya",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "Use himalaya to list, read, search, compose, reply, forward, and organize IMAP/SMTP email.",
+      "description": "透過 himalaya 操作 email 查詢、搜尋與處理。",
       "capabilities": [
-        "依技能說明執行",
-        "可做專案化封裝",
-        "需要時先驗證可用性"
-      ]
+        "收信/查信",
+        "搜尋郵件",
+        "郵件摘要"
+      ],
+      "title": "Email CLI"
     },
     {
       "name": "mcporter",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "List, configure, authenticate, call, and inspect MCP servers/tools with mcporter over HTTP or stdio.",
+      "description": "協助 Minecraft 伺服器資料搬遷或管理。",
       "capabilities": [
-        "依技能說明執行",
-        "可做專案化封裝",
-        "需要時先驗證可用性"
-      ]
+        "伺服器搬遷",
+        "資料整理",
+        "設定檢查"
+      ],
+      "title": "Minecraft 伺服器搬遷"
     },
     {
       "name": "model-usage",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "Summarize CodexBar local cost logs by model for Codex or Claude, including current or full breakdowns.",
+      "description": "查看模型/API 使用量、成本或用量摘要。",
       "capabilities": [
-        "依技能說明執行",
-        "可做專案化封裝",
-        "需要時先驗證可用性"
-      ]
+        "用量統計",
+        "成本檢查",
+        "模型使用分析"
+      ],
+      "title": "模型用量分析"
     },
     {
       "name": "notion",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "Notion API for creating and managing pages, databases, and blocks.",
+      "description": "讀取、搜尋、建立或更新 Notion 頁面與資料庫。",
       "capabilities": [
-        "依技能說明執行",
-        "可做專案化封裝",
-        "需要時先驗證可用性"
-      ]
+        "Notion 頁面",
+        "資料庫查詢",
+        "內容更新"
+      ],
+      "title": "Notion 管理"
     },
     {
       "name": "obsidian",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.",
+      "description": "管理 Obsidian vault 筆記搜尋、建立與整理。",
       "capabilities": [
-        "個人生產力工具",
-        "搜尋/建立/更新資料",
-        "日程與文件協作"
-      ]
+        "搜尋筆記",
+        "建立/更新 markdown",
+        "知識庫整理"
+      ],
+      "title": "Obsidian 筆記"
     },
     {
       "name": "openai-whisper",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "Local speech-to-text with the Whisper CLI (no API key).",
+      "description": "使用本機或 CLI Whisper 做音訊轉文字。",
       "capabilities": [
-        "語音轉文字/文字轉語音",
-        "音訊處理",
-        "語音交付"
-      ]
+        "音訊轉錄",
+        "字幕草稿",
+        "語音內容整理"
+      ],
+      "title": "本機 Whisper 轉錄"
     },
     {
       "name": "openhue",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "Control Philips Hue lights and scenes via the OpenHue CLI.",
+      "description": "控制 Hue 智慧燈具、場景與狀態。",
       "capabilities": [
-        "依技能說明執行",
-        "可做專案化封裝",
-        "需要時先驗證可用性"
-      ]
+        "開關燈",
+        "場景控制",
+        "設備狀態"
+      ],
+      "title": "Philips Hue 燈控"
     },
     {
       "name": "oracle",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "Use oracle CLI to bundle prompts and files for second-model debugging, refactor, design, or review checks.",
+      "description": "操作 Oracle Cloud 相關查詢與管理流程。",
       "capabilities": [
-        "依技能說明執行",
-        "可做專案化封裝",
-        "需要時先驗證可用性"
-      ]
+        "雲端資源查詢",
+        "實例狀態",
+        "管理輔助"
+      ],
+      "title": "Oracle Cloud 管理"
     },
     {
       "name": "ordercli",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "Foodora-only CLI for checking past orders and active order status (Deliveroo WIP).",
+      "description": "查詢或管理特定系統的訂單資料。",
       "capabilities": [
-        "依技能說明執行",
-        "可做專案化封裝",
-        "需要時先驗證可用性"
-      ]
+        "訂單搜尋",
+        "狀態查詢",
+        "客服輔助"
+      ],
+      "title": "訂單查詢"
     },
     {
       "name": "peekaboo",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "Capture and automate macOS UI with the Peekaboo CLI.",
+      "description": "在 macOS 抓取螢幕、視窗或應用程式畫面。",
       "capabilities": [
-        "依技能說明執行",
-        "可做專案化封裝",
-        "需要時先驗證可用性"
-      ]
+        "截圖",
+        "視窗辨識",
+        "UI 問題分析"
+      ],
+      "title": "螢幕/視窗截圖"
     },
     {
       "name": "sag",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "ElevenLabs text-to-speech with mac-style say UX.",
+      "description": "用 ElevenLabs 產生高品質 TTS 語音，適合故事、旁白與語音交付。",
       "capabilities": [
-        "依技能說明執行",
-        "可做專案化封裝",
-        "需要時先驗證可用性"
-      ]
+        "文字轉語音",
+        "角色聲音",
+        "音檔交付"
+      ],
+      "title": "ElevenLabs 語音"
     },
     {
       "name": "session-logs",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "Search and analyze your own session logs (older/parent conversations) using jq.",
+      "description": "查詢 OpenClaw session 記錄，用於回溯工作與除錯。",
       "capabilities": [
-        "依技能說明執行",
-        "可做專案化封裝",
-        "需要時先驗證可用性"
-      ]
+        "歷史查詢",
+        "工作回溯",
+        "除錯分析"
+      ],
+      "title": "Session Logs"
     },
     {
       "name": "sherpa-onnx-tts",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "Local text-to-speech via sherpa-onnx (offline, no cloud)",
+      "description": "使用 sherpa-onnx 做本機文字轉語音。",
       "capabilities": [
-        "語音轉文字/文字轉語音",
-        "音訊處理",
-        "語音交付"
-      ]
+        "離線語音",
+        "中文/多語 TTS",
+        "本機交付"
+      ],
+      "title": "本機 TTS"
     },
     {
       "name": "slack",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "Use the Slack tool to react, pin/unpin, send, edit, delete messages, or fetch Slack member info.",
+      "description": "讀取、搜尋、發送 Slack 訊息與管理頻道互動。",
       "capabilities": [
-        "訊息讀取/搜尋",
-        "訊息傳送",
-        "群組/私訊協作"
-      ]
+        "Slack 訊息",
+        "頻道搜尋",
+        "回覆/反應"
+      ],
+      "title": "Slack 管理"
     },
     {
       "name": "songsee",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "Generate spectrograms and feature-panel visualizations from audio with the songsee CLI.",
+      "description": "協助辨識或查詢歌曲與音樂資訊。",
       "capabilities": [
-        "語音轉文字/文字轉語音",
-        "音訊處理",
-        "語音交付"
-      ]
+        "找歌",
+        "音樂資訊",
+        "素材輔助"
+      ],
+      "title": "音樂辨識/查詢"
     },
     {
       "name": "sonoscli",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "Control Sonos speakers (discover/status/play/volume/group).",
+      "description": "控制 Sonos 播放器、音量、播放狀態與房間。",
       "capabilities": [
-        "依技能說明執行",
-        "可做專案化封裝",
-        "需要時先驗證可用性"
-      ]
+        "播放控制",
+        "音量調整",
+        "設備狀態"
+      ],
+      "title": "Sonos 控制"
     },
     {
       "name": "spotify-player",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "Terminal Spotify playback/search via spogo (preferred) or spotify_player.",
+      "description": "控制 Spotify 播放、搜尋音樂與播放清單。",
       "capabilities": [
-        "依技能說明執行",
-        "可做專案化封裝",
-        "需要時先驗證可用性"
-      ]
+        "播放/暫停",
+        "搜尋歌曲",
+        "播放清單"
+      ],
+      "title": "Spotify 播放控制"
     },
     {
       "name": "summarize",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "Summarize or transcribe URLs, YouTube/videos, podcasts, articles, transcripts, PDFs, and local files.",
+      "description": "將長文本、文件或對話整理成重點摘要。",
       "capabilities": [
-        "PDF 分析/編輯",
-        "內容擷取",
-        "文件交付"
-      ]
+        "長文摘要",
+        "重點整理",
+        "行動項目"
+      ],
+      "title": "摘要工具"
     },
     {
       "name": "things-mac",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "Add, update, list, search, or inspect Things 3 todos, inbox, today, projects, areas, and tags on macOS.",
+      "description": "操作 Things for Mac 的待辦、專案與清單。",
       "capabilities": [
-        "依技能說明執行",
-        "可做專案化封裝",
-        "需要時先驗證可用性"
-      ]
+        "新增待辦",
+        "查詢專案",
+        "完成事項"
+      ],
+      "title": "Things 待辦管理"
     },
     {
       "name": "tmux",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
+      "description": "管理 tmux session/window/pane，適合長時間終端工作。",
       "capabilities": [
-        "依技能說明執行",
-        "可做專案化封裝",
-        "需要時先驗證可用性"
-      ]
+        "session 管理",
+        "背景任務",
+        "終端分屏"
+      ],
+      "title": "tmux 工作區管理"
     },
     {
       "name": "trello",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "Manage Trello boards, lists, and cards via the Trello REST API.",
+      "description": "讀取、搜尋、建立或更新 Trello 卡片與看板。",
       "capabilities": [
-        "依技能說明執行",
-        "可做專案化封裝",
-        "需要時先驗證可用性"
-      ]
+        "看板管理",
+        "卡片更新",
+        "任務追蹤"
+      ],
+      "title": "Trello 看板"
     },
     {
       "name": "voice-call",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "Start voice calls via the OpenClaw voice-call plugin.",
+      "description": "處理或發起語音通話相關流程。",
       "capabilities": [
-        "語音轉文字/文字轉語音",
-        "音訊處理",
-        "語音交付"
-      ]
+        "語音互動",
+        "通話輔助",
+        "通話流程"
+      ],
+      "title": "語音通話"
     },
     {
       "name": "wacli",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "Send third-party WhatsApp messages or sync/search WhatsApp history via wacli, not normal active chats.",
+      "description": "透過 CLI 讀取、搜尋與發送 WhatsApp 訊息。",
       "capabilities": [
-        "訊息讀取/搜尋",
-        "訊息傳送",
-        "群組/私訊協作"
-      ]
+        "WhatsApp 訊息",
+        "聊天搜尋",
+        "發送回覆"
+      ],
+      "title": "WhatsApp CLI"
     },
     {
       "name": "xurl",
       "status": "已存在 / 可評估啟用",
       "source": "OpenClaw stock",
-      "description": "Use xurl for authenticated X API posts, replies, search, DMs, media upload, followers, or raw v2 calls.",
+      "description": "處理網址擷取、清理、展開或分析。",
       "capabilities": [
-        "依技能說明執行",
-        "可做專案化封裝",
-        "需要時先驗證可用性"
-      ]
+        "網址解析",
+        "連結整理",
+        "內容擷取輔助"
+      ],
+      "title": "URL 工具"
     },
     {
       "name": "clone-website",
       "status": "可導入模板流程",
       "source": "JCodesMore/ai-website-cloner-template",
-      "description": "把指定網站做成可維護的 Next.js/HTML clone：先截圖與抽資產，再建立區塊規格、重建、視覺 QA。",
+      "description": "使用 ai-website-cloner-template 的流程，從瀏覽器偵察、截圖、資產與樣式抽取，到重建 Next.js/HTML 頁面與視覺 QA。",
       "capabilities": [
         "網站視覺重建",
-        "資產/色彩/版面抽取",
-        "桌機/手機響應式頁面",
-        "適合 HTML/PPT/展示頁輸出"
-      ]
+        "桌機/手機響應式",
+        "產出 HTML/Web demo"
+      ],
+      "title": "網站 Clone 工作流"
     },
     {
       "name": "gdrive-uploader",
       "status": "本機存在，待正式接入",
       "source": "workspace/skills",
-      "description": "將檔案上傳到 Google Drive 並產生可分享連結，適合交付 zip、圖片、簡報與網頁包。",
+      "description": "把檔案上傳到 Google Drive 並產生分享連結，適合交付圖片、zip、PDF、簡報。",
       "capabilities": [
         "Drive 上傳",
-        "可分享連結",
-        "交付檔案整理"
-      ]
+        "產生分享連結",
+        "交付檔案"
+      ],
+      "title": "Google Drive 檔案上傳"
     },
     {
       "name": "offline-llm-coder",
       "status": "規劃中",
       "source": "local model plan",
-      "description": "本地離線模型輔助 coding、摘要、分類，降低雲端額度消耗；高難度視覺與大型重構仍建議雲端模型。",
+      "description": "規劃用 Mac mini 本地模型協助程式、摘要與批次工作，降低雲端額度。",
       "capabilities": [
         "離線推理",
         "低成本批次處理",
-        "隱私敏感資料本機處理"
-      ]
+        "隱私資料本機處理"
+      ],
+      "title": "本地離線模型 Coding"
     },
     {
       "name": "website-publisher",
       "status": "規劃中",
       "source": "GitHub Pages / Drive",
-      "description": "把產出的 HTML、PPT、clone demo 自動發布到 GitHub Pages，並同步更新入口目錄。",
+      "description": "把 HTML、PPT、clone demo 發布到 GitHub Pages，並更新入口目錄。",
       "capabilities": [
         "GitHub Pages 發布",
         "入口頁更新",
         "版本化交付"
-      ]
+      ],
+      "title": "網站/展示頁發布"
     }
   ]
 }
