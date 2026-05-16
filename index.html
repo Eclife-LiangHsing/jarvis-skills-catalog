@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>賈維斯技能總表</title>
+  <meta name="description" content="Jarvis / OpenClaw skills catalog: installed, available, and future skills." />
+  <style>
+    :root{--bg:#0f172a;--panel:#111827;--card:#172033;--text:#e5e7eb;--muted:#94a3b8;--line:#263349;--blue:#60a5fa;--green:#34d399;--amber:#fbbf24;--pink:#f472b6}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top left,#1d4ed822,transparent 34rem),linear-gradient(180deg,#0f172a,#111827 45%,#0b1120);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","Segoe UI",sans-serif;line-height:1.65}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}.hero{padding:72px 0 36px}.badge{display:inline-flex;gap:8px;align-items:center;border:1px solid #334155;background:#0b1220cc;border-radius:999px;padding:8px 14px;color:#bae6fd;font-weight:700;font-size:14px}.hero h1{font-size:clamp(38px,6vw,74px);line-height:1.05;margin:22px 0 18px;letter-spacing:-.04em}.hero p{max-width:820px;color:#cbd5e1;font-size:19px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:34px 0}.stat{padding:22px;border:1px solid var(--line);border-radius:24px;background:#101827b3}.stat b{display:block;font-size:34px}.stat span{color:var(--muted)}.toolbar{position:sticky;top:0;z-index:3;backdrop-filter:blur(14px);background:#0f172acc;border-top:1px solid #1e293b;border-bottom:1px solid #1e293b;padding:14px 0}.tools{display:flex;gap:12px;flex-wrap:wrap}input,select{background:#0b1220;border:1px solid #334155;color:var(--text);border-radius:14px;padding:12px 14px;font-size:15px}input{flex:1;min-width:240px}.section{padding:34px 0}.section h2{font-size:28px;margin:0 0 14px}.hint{color:var(--muted);margin-top:-4px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{border:1px solid var(--line);background:linear-gradient(180deg,#172033,#111827);border-radius:22px;padding:20px;min-height:255px;box-shadow:0 16px 40px #0002}.card-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.card h3{margin:0;font-size:22px;color:white}.card span{white-space:nowrap;font-size:12px;border:1px solid #334155;border-radius:999px;padding:5px 9px;color:#dbeafe;background:#0b1220}.card p{color:#cbd5e1;margin:14px 0}.card ul{padding-left:18px;margin:0;color:#a7f3d0}.card small{display:block;margin-top:16px;color:#64748b}.roadmap{border:1px solid #334155;border-radius:28px;padding:26px;background:linear-gradient(135deg,#1e293b,#111827)}.footer{padding:42px 0 72px;color:#94a3b8}.pill{color:#fde68a}.hidden{display:none!important}@media(max-width:900px){.grid,.stats{grid-template-columns:1fr}.hero{padding-top:44px}.card-top{display:block}.card span{display:inline-block;margin-top:8px}}
+  </style>
+</head>
+<body>
+  <header class="hero wrap"><div class="badge">💡 Jarvis / OpenClaw Skill Catalog</div><h1>賈維斯技能總表</h1><p>這裡集中整理目前已安裝、已存在可評估啟用，以及未來可能導入的技能。每新增或調整一個技能，這份頁面就可以同步更新，作為能力盤點與交付入口。</p><div class="stats"><div class="stat"><b>24</b><span>目前可用技能</span></div><div class="stat"><b>38</b><span>本機已存在 / 可評估</span></div><div class="stat"><b>4</b><span>未來候選能力</span></div></div></header>
+  <div class="toolbar"><div class="wrap tools"><input id="q" placeholder="搜尋技能、用途、來源…" /><select id="filter"><option value="all">全部</option><option value="active">已安裝 / 目前可用</option><option value="future">未來 / 可導入</option></select></div></div>
+  <main class="wrap">
+    <section class="section"><h2>已安裝 / 目前可用</h2><p class="hint">這些是目前這個 OpenClaw 會話可直接調用或已有專門流程的技能。</p><div class="grid"><article class="card" data-name="apple-notes" data-status="已安裝 / 目前可用">
+  <div class="card-top"><h3>apple-notes</h3><span>已安裝 / 目前可用</span></div>
+  <p>Create, view, edit, delete, search, move, or export Apple Notes via the memo CLI on macOS.</p>
+  <ul><li>個人生產力工具</li><li>搜尋/建立/更新資料</li><li>日程與文件協作</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="apple-reminders" data-status="已安裝 / 目前可用">
+  <div class="card-top"><h3>apple-reminders</h3><span>已安裝 / 目前可用</span></div>
+  <p>List, add, edit, complete, or delete Apple Reminders and reminder lists via remindctl.</p>
+  <ul><li>個人生產力工具</li><li>搜尋/建立/更新資料</li><li>日程與文件協作</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="daily-report-voice" data-status="已安裝 / 目前可用">
+  <div class="card-top"><h3>daily-report-voice</h3><span>已安裝 / 目前可用</span></div>
+  <p>Generate and deliver Jason's daily report as Chinese text + Chinese voice attachment to Telegram. Use when asked to run, fix, or modify the 5:00 daily report pipeline, report format, voice output, attachment delivery, or related schedule/script issues.</p>
+  <ul><li>訊息讀取/搜尋</li><li>訊息傳送</li><li>群組/私訊協作</li></ul>
+  <small>workspace</small>
+</article>
+<article class="card" data-name="fincept" data-status="已安裝 / 目前可用">
+  <div class="card-top"><h3>fincept</h3><span>已安裝 / 目前可用</span></div>
+  <p>Use Jason's local Fincept Bridge/Gateway for financial data queries, market data, Yahoo/CoinGecko public providers, or Fincept official API analysis while protecting API keys/tokens and avoiding unnecessary Fincept credit usage.</p>
+  <ul><li>市場資料查詢</li><li>持股監控</li><li>價格/閾值提醒</li></ul>
+  <small>workspace</small>
+</article>
+<article class="card" data-name="gemini" data-status="已安裝 / 目前可用">
+  <div class="card-top"><h3>gemini</h3><span>已安裝 / 目前可用</span></div>
+  <p>Gemini CLI for one-shot Q&A, summaries, and generation.</p>
+  <ul><li>依技能說明執行</li><li>可做專案化封裝</li><li>需要時先驗證可用性</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="gh-issues" data-status="已安裝 / 目前可用">
+  <div class="card-top"><h3>gh-issues</h3><span>已安裝 / 目前可用</span></div>
+  <p>Fetch GitHub issues, delegate fixes to subagents, open PRs, watch reviews, or run /gh-issues workflows.</p>
+  <ul><li>GitHub repo/PR/issue 查詢</li><li>CI 狀態檢查</li><li>發布與協作流程</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="github" data-status="已安裝 / 目前可用">
+  <div class="card-top"><h3>github</h3><span>已安裝 / 目前可用</span></div>
+  <p>Use gh for GitHub issues, PR status, CI/logs, comments, reviews, releases, and API queries.</p>
+  <ul><li>GitHub repo/PR/issue 查詢</li><li>CI 狀態檢查</li><li>發布與協作流程</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="gog" data-status="已安裝 / 目前可用">
+  <div class="card-top"><h3>gog</h3><span>已安裝 / 目前可用</span></div>
+  <p>Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.</p>
+  <ul><li>個人生產力工具</li><li>搜尋/建立/更新資料</li><li>日程與文件協作</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="healthcheck" data-status="已安裝 / 目前可用">
+  <div class="card-top"><h3>healthcheck</h3><span>已安裝 / 目前可用</span></div>
+  <p>Audit and harden hosts running OpenClaw for SSH, firewall, updates, exposure, cron checks, and risk posture.</p>
+  <ul><li>依技能說明執行</li><li>可做專案化封裝</li><li>需要時先驗證可用性</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="html-ppt" data-status="已安裝 / 目前可用">
+  <div class="card-top"><h3>html-ppt</h3><span>已安裝 / 目前可用</span></div>
+  <p>Create high-quality interactive HTML slide decks, PPT-like presentations, speaker-note decks, mobile/desktop responsive decks, lecture/training decks, product pitches, and Xiaohongshu/IG carousel-style pages using HTML/CSS/JavaScript. Use when the user asks for PPT, slides, deck, keynote, speaker mode, presenter view, interactive HTML presentation, 「請把這些資料做成互動式HTML投影片」, or converting documents/videos/talks into polished web slides.</p>
+  <ul><li>互動式 HTML 投影片</li><li>簡報/展示頁製作</li><li>響應式視覺排版</li></ul>
+  <small>workspace</small>
+</article>
+<article class="card" data-name="html-ppt-catalog" data-status="已安裝 / 目前可用">
+  <div class="card-top"><h3>html-ppt-catalog</h3><span>已安裝 / 目前可用</span></div>
+  <p>Maintain a fixed index/catalog webpage for all generated HTML PPT / GitHub Pages slide decks. Use when creating, publishing, updating, or auditing HTML PPT links, slide deck catalogs, portfolio pages, presentation indexes, or when the user asks for a總表/列表/入口頁 of all PPT links with names, descriptions, sources, dates, and URLs.</p>
+  <ul><li>GitHub repo/PR/issue 查詢</li><li>CI 狀態檢查</li><li>發布與協作流程</li></ul>
+  <small>workspace</small>
+</article>
+<article class="card" data-name="imsg" data-status="已安裝 / 目前可用">
+  <div class="card-top"><h3>imsg</h3><span>已安裝 / 目前可用</span></div>
+  <p>iMessage/SMS CLI for listing chats, history, and sending messages via Messages.app.</p>
+  <ul><li>訊息讀取/搜尋</li><li>訊息傳送</li><li>群組/私訊協作</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="nano-pdf" data-status="已安裝 / 目前可用">
+  <div class="card-top"><h3>nano-pdf</h3><span>已安裝 / 目前可用</span></div>
+  <p>Edit PDFs with natural-language instructions using the nano-pdf CLI.</p>
+  <ul><li>PDF 分析/編輯</li><li>內容擷取</li><li>文件交付</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="node-connect" data-status="已安裝 / 目前可用">
+  <div class="card-top"><h3>node-connect</h3><span>已安裝 / 目前可用</span></div>
+  <p>Diagnose OpenClaw Android, iOS, or macOS node pairing, QR/setup code, route, auth, and connection failures.</p>
+  <ul><li>依技能說明執行</li><li>可做專案化封裝</li><li>需要時先驗證可用性</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="openai-whisper-api" data-status="已安裝 / 目前可用">
+  <div class="card-top"><h3>openai-whisper-api</h3><span>已安裝 / 目前可用</span></div>
+  <p>Transcribe audio via OpenAI Audio Transcriptions API (Whisper).</p>
+  <ul><li>語音轉文字/文字轉語音</li><li>音訊處理</li><li>語音交付</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="skill-creator" data-status="已安裝 / 目前可用">
+  <div class="card-top"><h3>skill-creator</h3><span>已安裝 / 目前可用</span></div>
+  <p>Create, edit, improve, tidy, review, audit, or restructure AgentSkills and SKILL.md files.</p>
+  <ul><li>依技能說明執行</li><li>可做專案化封裝</li><li>需要時先驗證可用性</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="taskflow" data-status="已安裝 / 目前可用">
+  <div class="card-top"><h3>taskflow</h3><span>已安裝 / 目前可用</span></div>
+  <p>Coordinate multi-step detached tasks as one durable TaskFlow job with owner context, state, waits, and child tasks.</p>
+  <ul><li>長任務協調</li><li>等待/恢復狀態</li><li>子任務管理</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="taskflow-inbox-triage" data-status="已安裝 / 目前可用">
+  <div class="card-top"><h3>taskflow-inbox-triage</h3><span>已安裝 / 目前可用</span></div>
+  <p>Example TaskFlow pattern for inbox triage, intent routing, waiting on replies, and later summaries.</p>
+  <ul><li>長任務協調</li><li>等待/恢復狀態</li><li>子任務管理</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="telegram" data-status="已安裝 / 目前可用">
+  <div class="card-top"><h3>telegram</h3><span>已安裝 / 目前可用</span></div>
+  <p>Telegram CLI for reading, searching, and sending messages. Use when the user asks about Telegram messages, wants to check inbox, search chats, send messages, or look up contacts and groups.</p>
+  <ul><li>訊息讀取/搜尋</li><li>訊息傳送</li><li>群組/私訊協作</li></ul>
+  <small>user skills</small>
+</article>
+<article class="card" data-name="terminal-ocr" data-status="已安裝 / 目前可用">
+  <div class="card-top"><h3>terminal-ocr</h3><span>已安裝 / 目前可用</span></div>
+  <p>终端截图OCR识别技能。专门处理终端/命令行界面的截图，提取文本内容并进行分析。</p>
+  <ul><li>依技能說明執行</li><li>可做專案化封裝</li><li>需要時先驗證可用性</li></ul>
+  <small>workspace</small>
+</article>
+<article class="card" data-name="tw-stock-hourly-monitor" data-status="已安裝 / 目前可用">
+  <div class="card-top"><h3>tw-stock-hourly-monitor</h3><span>已安裝 / 目前可用</span></div>
+  <p>Maintain Taiwan market monitoring (opening + hourly checks through close) with Telegram text and local Chinese voice alerts. Use when asked to modify TW symbols, thresholds, trading-window logic, or troubleshoot TW alert automation.</p>
+  <ul><li>訊息讀取/搜尋</li><li>訊息傳送</li><li>群組/私訊協作</li></ul>
+  <small>workspace</small>
+</article>
+<article class="card" data-name="us-stock-hourly-monitor" data-status="已安裝 / 目前可用">
+  <div class="card-top"><h3>us-stock-hourly-monitor</h3><span>已安裝 / 目前可用</span></div>
+  <p>Maintain US stock hourly monitoring from market open to close with threshold-triggered alerts. Use when asked to add symbols, change thresholds, adjust cadence/session windows, debug missed alerts, or tune Telegram/voice notification behavior for US market monitoring.</p>
+  <ul><li>訊息讀取/搜尋</li><li>訊息傳送</li><li>群組/私訊協作</li></ul>
+  <small>workspace</small>
+</article>
+<article class="card" data-name="video-frames" data-status="已安裝 / 目前可用">
+  <div class="card-top"><h3>video-frames</h3><span>已安裝 / 目前可用</span></div>
+  <p>Extract frames or short clips from videos using ffmpeg.</p>
+  <ul><li>影片切幀</li><li>短片段擷取</li><li>視覺素材整理</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="weather" data-status="已安裝 / 目前可用">
+  <div class="card-top"><h3>weather</h3><span>已安裝 / 目前可用</span></div>
+  <p>Get current weather, rain, temperature, and forecasts for locations or travel planning.</p>
+  <ul><li>天氣/降雨查詢</li><li>行程天氣建議</li><li>預報摘要</li></ul>
+  <small>OpenClaw stock</small>
+</article></div></section>
+    <section class="section"><h2>已存在 / 可評估啟用</h2><p class="hint">本機 OpenClaw 技能庫中已找到，但不一定在目前會話允許清單內；要啟用前會先評估穩定性、權限與實際價值。</p><div class="grid"><article class="card" data-name="1password" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>1password</h3><span>已存在 / 可評估啟用</span></div>
+  <p>Set up and use 1Password CLI for sign-in, desktop integration, and reading or injecting secrets.</p>
+  <ul><li>依技能說明執行</li><li>可做專案化封裝</li><li>需要時先驗證可用性</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="bear-notes" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>bear-notes</h3><span>已存在 / 可評估啟用</span></div>
+  <p>Create, search, and manage Bear notes via grizzly CLI.</p>
+  <ul><li>個人生產力工具</li><li>搜尋/建立/更新資料</li><li>日程與文件協作</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="blogwatcher" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>blogwatcher</h3><span>已存在 / 可評估啟用</span></div>
+  <p>Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.</p>
+  <ul><li>依技能說明執行</li><li>可做專案化封裝</li><li>需要時先驗證可用性</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="blucli" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>blucli</h3><span>已存在 / 可評估啟用</span></div>
+  <p>BluOS CLI (blu) for discovery, playback, grouping, and volume.</p>
+  <ul><li>依技能說明執行</li><li>可做專案化封裝</li><li>需要時先驗證可用性</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="bluebubbles" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>bluebubbles</h3><span>已存在 / 可評估啟用</span></div>
+  <p>Send and manage iMessages via BlueBubbles, including attachments, tapbacks, edits, replies, and groups.</p>
+  <ul><li>訊息讀取/搜尋</li><li>訊息傳送</li><li>群組/私訊協作</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="camsnap" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>camsnap</h3><span>已存在 / 可評估啟用</span></div>
+  <p>Capture frames or clips from RTSP/ONVIF cameras.</p>
+  <ul><li>影片切幀</li><li>短片段擷取</li><li>視覺素材整理</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="canvas" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>canvas</h3><span>已存在 / 可評估啟用</span></div>
+  <p>本機已找到技能檔，待補說明。</p>
+  <ul><li>依技能說明執行</li><li>可做專案化封裝</li><li>需要時先驗證可用性</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="clawhub" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>clawhub</h3><span>已存在 / 可評估啟用</span></div>
+  <p>Search, install, update, sync, or publish agent skills with the ClawHub CLI and registry.</p>
+  <ul><li>依技能說明執行</li><li>可做專案化封裝</li><li>需要時先驗證可用性</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="coding-agent" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>coding-agent</h3><span>已存在 / 可評估啟用</span></div>
+  <p>Delegate coding tasks to Codex, Claude Code, OpenCode, or Pi agents via immediate background processes. Use when: (1) building or creating features/apps, (2) reviewing PRs in a temp clone/worktree, (3) refactoring large codebases, (4) iterative coding that needs file exploration. NOT for: simple one-line fixes (just edit), reading code (use read tool), thread-bound ACP harness requests in chat (use sessions_spawn with runtime:"acp"), or any work in ~/clawd workspace (never spawn agents here). All coding-agent runs start with background:true immediately. Claude Code: use --print --permission-mode bypassPermissions (no PTY). Codex/Pi/OpenCode: pty:true required. Completion notification must use openclaw message send, not system event/heartbeat.</p>
+  <ul><li>訊息讀取/搜尋</li><li>訊息傳送</li><li>群組/私訊協作</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="discord" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>discord</h3><span>已存在 / 可評估啟用</span></div>
+  <p>Discord ops via the message tool (channel=discord).</p>
+  <ul><li>訊息讀取/搜尋</li><li>訊息傳送</li><li>群組/私訊協作</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="eightctl" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>eightctl</h3><span>已存在 / 可評估啟用</span></div>
+  <p>Control Eight Sleep pods (status, temperature, alarms, schedules).</p>
+  <ul><li>依技能說明執行</li><li>可做專案化封裝</li><li>需要時先驗證可用性</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="gdrive-uploader" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>gdrive-uploader</h3><span>已存在 / 可評估啟用</span></div>
+  <p>本機已找到技能檔，待補說明。</p>
+  <ul><li>個人生產力工具</li><li>搜尋/建立/更新資料</li><li>日程與文件協作</li></ul>
+  <small>workspace</small>
+</article>
+<article class="card" data-name="gifgrep" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>gifgrep</h3><span>已存在 / 可評估啟用</span></div>
+  <p>Search GIF providers with CLI/TUI, download results, and extract stills/sheets.</p>
+  <ul><li>個人生產力工具</li><li>搜尋/建立/更新資料</li><li>日程與文件協作</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="goplaces" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>goplaces</h3><span>已存在 / 可評估啟用</span></div>
+  <p>Query Google Places for text search, place details, resolve, reviews, or scriptable JSON via goplaces.</p>
+  <ul><li>個人生產力工具</li><li>搜尋/建立/更新資料</li><li>日程與文件協作</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="himalaya" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>himalaya</h3><span>已存在 / 可評估啟用</span></div>
+  <p>Use himalaya to list, read, search, compose, reply, forward, and organize IMAP/SMTP email.</p>
+  <ul><li>依技能說明執行</li><li>可做專案化封裝</li><li>需要時先驗證可用性</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="mcporter" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>mcporter</h3><span>已存在 / 可評估啟用</span></div>
+  <p>List, configure, authenticate, call, and inspect MCP servers/tools with mcporter over HTTP or stdio.</p>
+  <ul><li>依技能說明執行</li><li>可做專案化封裝</li><li>需要時先驗證可用性</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="model-usage" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>model-usage</h3><span>已存在 / 可評估啟用</span></div>
+  <p>Summarize CodexBar local cost logs by model for Codex or Claude, including current or full breakdowns.</p>
+  <ul><li>依技能說明執行</li><li>可做專案化封裝</li><li>需要時先驗證可用性</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="notion" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>notion</h3><span>已存在 / 可評估啟用</span></div>
+  <p>Notion API for creating and managing pages, databases, and blocks.</p>
+  <ul><li>依技能說明執行</li><li>可做專案化封裝</li><li>需要時先驗證可用性</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="obsidian" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>obsidian</h3><span>已存在 / 可評估啟用</span></div>
+  <p>Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.</p>
+  <ul><li>個人生產力工具</li><li>搜尋/建立/更新資料</li><li>日程與文件協作</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="openai-whisper" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>openai-whisper</h3><span>已存在 / 可評估啟用</span></div>
+  <p>Local speech-to-text with the Whisper CLI (no API key).</p>
+  <ul><li>語音轉文字/文字轉語音</li><li>音訊處理</li><li>語音交付</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="openhue" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>openhue</h3><span>已存在 / 可評估啟用</span></div>
+  <p>Control Philips Hue lights and scenes via the OpenHue CLI.</p>
+  <ul><li>依技能說明執行</li><li>可做專案化封裝</li><li>需要時先驗證可用性</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="oracle" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>oracle</h3><span>已存在 / 可評估啟用</span></div>
+  <p>Use oracle CLI to bundle prompts and files for second-model debugging, refactor, design, or review checks.</p>
+  <ul><li>依技能說明執行</li><li>可做專案化封裝</li><li>需要時先驗證可用性</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="ordercli" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>ordercli</h3><span>已存在 / 可評估啟用</span></div>
+  <p>Foodora-only CLI for checking past orders and active order status (Deliveroo WIP).</p>
+  <ul><li>依技能說明執行</li><li>可做專案化封裝</li><li>需要時先驗證可用性</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="peekaboo" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>peekaboo</h3><span>已存在 / 可評估啟用</span></div>
+  <p>Capture and automate macOS UI with the Peekaboo CLI.</p>
+  <ul><li>依技能說明執行</li><li>可做專案化封裝</li><li>需要時先驗證可用性</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="sag" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>sag</h3><span>已存在 / 可評估啟用</span></div>
+  <p>ElevenLabs text-to-speech with mac-style say UX.</p>
+  <ul><li>依技能說明執行</li><li>可做專案化封裝</li><li>需要時先驗證可用性</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="session-logs" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>session-logs</h3><span>已存在 / 可評估啟用</span></div>
+  <p>Search and analyze your own session logs (older/parent conversations) using jq.</p>
+  <ul><li>依技能說明執行</li><li>可做專案化封裝</li><li>需要時先驗證可用性</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="sherpa-onnx-tts" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>sherpa-onnx-tts</h3><span>已存在 / 可評估啟用</span></div>
+  <p>Local text-to-speech via sherpa-onnx (offline, no cloud)</p>
+  <ul><li>語音轉文字/文字轉語音</li><li>音訊處理</li><li>語音交付</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="slack" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>slack</h3><span>已存在 / 可評估啟用</span></div>
+  <p>Use the Slack tool to react, pin/unpin, send, edit, delete messages, or fetch Slack member info.</p>
+  <ul><li>訊息讀取/搜尋</li><li>訊息傳送</li><li>群組/私訊協作</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="songsee" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>songsee</h3><span>已存在 / 可評估啟用</span></div>
+  <p>Generate spectrograms and feature-panel visualizations from audio with the songsee CLI.</p>
+  <ul><li>語音轉文字/文字轉語音</li><li>音訊處理</li><li>語音交付</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="sonoscli" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>sonoscli</h3><span>已存在 / 可評估啟用</span></div>
+  <p>Control Sonos speakers (discover/status/play/volume/group).</p>
+  <ul><li>依技能說明執行</li><li>可做專案化封裝</li><li>需要時先驗證可用性</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="spotify-player" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>spotify-player</h3><span>已存在 / 可評估啟用</span></div>
+  <p>Terminal Spotify playback/search via spogo (preferred) or spotify_player.</p>
+  <ul><li>依技能說明執行</li><li>可做專案化封裝</li><li>需要時先驗證可用性</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="summarize" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>summarize</h3><span>已存在 / 可評估啟用</span></div>
+  <p>Summarize or transcribe URLs, YouTube/videos, podcasts, articles, transcripts, PDFs, and local files.</p>
+  <ul><li>PDF 分析/編輯</li><li>內容擷取</li><li>文件交付</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="things-mac" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>things-mac</h3><span>已存在 / 可評估啟用</span></div>
+  <p>Add, update, list, search, or inspect Things 3 todos, inbox, today, projects, areas, and tags on macOS.</p>
+  <ul><li>依技能說明執行</li><li>可做專案化封裝</li><li>需要時先驗證可用性</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="tmux" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>tmux</h3><span>已存在 / 可評估啟用</span></div>
+  <p>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</p>
+  <ul><li>依技能說明執行</li><li>可做專案化封裝</li><li>需要時先驗證可用性</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="trello" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>trello</h3><span>已存在 / 可評估啟用</span></div>
+  <p>Manage Trello boards, lists, and cards via the Trello REST API.</p>
+  <ul><li>依技能說明執行</li><li>可做專案化封裝</li><li>需要時先驗證可用性</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="voice-call" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>voice-call</h3><span>已存在 / 可評估啟用</span></div>
+  <p>Start voice calls via the OpenClaw voice-call plugin.</p>
+  <ul><li>語音轉文字/文字轉語音</li><li>音訊處理</li><li>語音交付</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="wacli" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>wacli</h3><span>已存在 / 可評估啟用</span></div>
+  <p>Send third-party WhatsApp messages or sync/search WhatsApp history via wacli, not normal active chats.</p>
+  <ul><li>訊息讀取/搜尋</li><li>訊息傳送</li><li>群組/私訊協作</li></ul>
+  <small>OpenClaw stock</small>
+</article>
+<article class="card" data-name="xurl" data-status="已存在 / 可評估啟用">
+  <div class="card-top"><h3>xurl</h3><span>已存在 / 可評估啟用</span></div>
+  <p>Use xurl for authenticated X API posts, replies, search, DMs, media upload, followers, or raw v2 calls.</p>
+  <ul><li>依技能說明執行</li><li>可做專案化封裝</li><li>需要時先驗證可用性</li></ul>
+  <small>OpenClaw stock</small>
+</article></div></section>
+    <section class="section"><h2>未來可能導入</h2><p class="hint">根據 Jason 目前常做的交付形態與規劃，值得排進 roadmap 的候選能力。</p><div class="grid"><article class="card" data-name="clone-website" data-status="可導入模板流程">
+  <div class="card-top"><h3>clone-website</h3><span>可導入模板流程</span></div>
+  <p>把指定網站做成可維護的 Next.js/HTML clone：先截圖與抽資產，再建立區塊規格、重建、視覺 QA。</p>
+  <ul><li>網站視覺重建</li><li>資產/色彩/版面抽取</li><li>桌機/手機響應式頁面</li><li>適合 HTML/PPT/展示頁輸出</li></ul>
+  <small>JCodesMore/ai-website-cloner-template</small>
+</article>
+<article class="card" data-name="gdrive-uploader" data-status="本機存在，待正式接入">
+  <div class="card-top"><h3>gdrive-uploader</h3><span>本機存在，待正式接入</span></div>
+  <p>將檔案上傳到 Google Drive 並產生可分享連結，適合交付 zip、圖片、簡報與網頁包。</p>
+  <ul><li>Drive 上傳</li><li>可分享連結</li><li>交付檔案整理</li></ul>
+  <small>workspace/skills</small>
+</article>
+<article class="card" data-name="offline-llm-coder" data-status="規劃中">
+  <div class="card-top"><h3>offline-llm-coder</h3><span>規劃中</span></div>
+  <p>本地離線模型輔助 coding、摘要、分類，降低雲端額度消耗；高難度視覺與大型重構仍建議雲端模型。</p>
+  <ul><li>離線推理</li><li>低成本批次處理</li><li>隱私敏感資料本機處理</li></ul>
+  <small>local model plan</small>
+</article>
+<article class="card" data-name="website-publisher" data-status="規劃中">
+  <div class="card-top"><h3>website-publisher</h3><span>規劃中</span></div>
+  <p>把產出的 HTML、PPT、clone demo 自動發布到 GitHub Pages，並同步更新入口目錄。</p>
+  <ul><li>GitHub Pages 發布</li><li>入口頁更新</li><li>版本化交付</li></ul>
+  <small>GitHub Pages / Drive</small>
+</article></div></section>
+    <section class="section"><div class="roadmap"><h2>更新規則</h2><p>新增技能時，同步更新 <span class="pill">skills.json</span> 與此頁；技能是否真的可用，以現場工具、權限、登入狀態與測試結果為準，不靠舊記憶硬推論。</p></div></section>
+  </main>
+  <footer class="footer wrap">Last updated: 2026/5/16 下午10:11:09 · Source data: <a style="color:#93c5fd" href="./skills.json">skills.json</a></footer>
+  <script>
+    const q=document.querySelector('#q'), filter=document.querySelector('#filter'), cards=[...document.querySelectorAll('.card')];
+    function apply(){const s=q.value.toLowerCase().trim(), f=filter.value;cards.forEach(c=>{const text=c.innerText.toLowerCase();const status=c.dataset.status;const okText=!s||text.includes(s);const okFilter=f==='all'||(f==='active'&&status.startsWith('已安裝'))||(f==='future'&&!status.startsWith('已安裝'));c.classList.toggle('hidden',!(okText&&okFilter));});}
+    q.addEventListener('input',apply);filter.addEventListener('change',apply);
+  </script>
+</body>
+</html>
