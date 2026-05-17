@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-05-16T14:17:10.818Z",
+  "updatedAt": "2026-05-17T04:53:29.194Z",
   "counts": {
     "active": 24,
     "discovered": 38,
-    "future": 4
+    "future": 5
   },
   "skills": [
     {
@@ -773,6 +773,18 @@
         "交付檔案"
       ],
       "title": "Google Drive 檔案上傳"
+    },
+    {
+      "name": "tweetclaw",
+      "status": "規劃中",
+      "source": "Xquik-dev/tweetclaw",
+      "description": "透過 TweetClaw OpenClaw plugin 搜尋 tweets、tweet replies，匯出 followers、查找 users、監控 X/Twitter、處理 webhooks、準備 giveaway draws，並在人工批准後發布 posts 或 replies。安裝: openclaw plugins install @xquik/tweetclaw。",
+      "capabilities": [
+        "search tweets/replies",
+        "follower export/user lookup",
+        "approved posts/replies"
+      ],
+      "title": "TweetClaw X/Twitter 自動化"
     },
     {
       "name": "offline-llm-coder",
